@@ -120,5 +120,9 @@ export default defineConfig({
   },
   vite: {
     plugins: [tailwindcss()],
+    resolve: {
+    alias: {
+      '@images': path.resolve('./src/assets/images')
+    }
   },
 });
